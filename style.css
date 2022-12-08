@@ -1,0 +1,39 @@
+.checkbox {
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox > span {
+    color: blueviolet;
+    padding: 0.5rem 0.25rem;
+}
+
+.checkbox > input {
+    height: 25px;
+    width: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.checkbox > input:checked {
+    border: none;
+    background-color: #41b883;
+}
+
+.checkbox > input:checked + span::before {
+    content: "\f005"; /* font-awesine icon */
+    display: block;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    left: 0.6rem;
+    top: 0.4rem;
+}
