@@ -29,11 +29,14 @@
 }
 
 .checkbox > input:checked + span::before {
-    content: "\f005"; /* font-awesome icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 20px;
     display: block;
     text-align: center;
     color: #fff;
     position: absolute;
-    left: 0.6rem;
-    top: 0.4rem;
+    left: 0.43rem;
+    top: 0.38rem;
 }
